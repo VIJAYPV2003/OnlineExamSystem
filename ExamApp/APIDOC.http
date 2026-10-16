@@ -1,0 +1,16 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "which is the correct syntax for a function in python?",
+    "option_a": "def my_function():",
+    "option_b": "def my function()",
+    "option_c": "my_function():",
+    "option_d": "def my function()",
+    "correct_answer": "def my_function:"
+}
