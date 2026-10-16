@@ -14,3 +14,23 @@ Content-Type: application/json
     "option_d": "def my function()",
     "correct_answer": "def my_function:"
 }
+
+###
+GET http://127.0.0.1:8000/questions/2/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/questions/2/
+Content-Type: application/json
+
+{
+    "question": "what of this is not a valid python variable name?",
+    "option_a": "_value",
+    "option_b": "1value",
+    "option_c": "value1",
+    "option_d": "value_1",
+    "correct_answer": "1value"
+}
+
+###
+DELETE http://127.0.0.1:8000/questions/6/
